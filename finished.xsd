@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="finished" targetNamespace="http://tempuri.org/finished.xsd" xmlns:mstns="http://tempuri.org/finished.xsd" xmlns="http://tempuri.org/finished.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="finished" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="finished" msprop:Generator_UserDSName="finished">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="complaints" msprop:Generator_TableClassName="complaintsDataTable" msprop:Generator_TableVarName="tablecomplaints" msprop:Generator_TablePropName="complaints" msprop:Generator_RowDeletingName="complaintsRowDeleting" msprop:Generator_RowChangingName="complaintsRowChanging" msprop:Generator_RowEvHandlerName="complaintsRowChangeEventHandler" msprop:Generator_RowDeletedName="complaintsRowDeleted" msprop:Generator_UserTableName="complaints" msprop:Generator_RowChangedName="complaintsRowChanged" msprop:Generator_RowEvArgName="complaintsRowChangeEvent" msprop:Generator_RowClassName="complaintsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="complaint_id" msprop:Generator_ColumnVarNameInTable="columncomplaint_id" msprop:Generator_ColumnPropNameInRow="complaint_id" msprop:Generator_ColumnPropNameInTable="complaint_idColumn" msprop:Generator_UserColumnName="complaint_id" type="xs:long" />
+              <xs:element name="complainer" msprop:Generator_ColumnVarNameInTable="columncomplainer" msprop:Generator_ColumnPropNameInRow="complainer" msprop:Generator_ColumnPropNameInTable="complainerColumn" msprop:Generator_UserColumnName="complainer" type="xs:string" minOccurs="0" />
+              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category" type="xs:string" minOccurs="0" />
+              <xs:element name="complaint_text" msprop:Generator_ColumnVarNameInTable="columncomplaint_text" msprop:Generator_ColumnPropNameInRow="complaint_text" msprop:Generator_ColumnPropNameInTable="complaint_textColumn" msprop:Generator_UserColumnName="complaint_text" type="xs:string" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" type="xs:string" minOccurs="0" />
+              <xs:element name="submission_datetime" msprop:Generator_ColumnVarNameInTable="columnsubmission_datetime" msprop:Generator_ColumnPropNameInRow="submission_datetime" msprop:Generator_ColumnPropNameInTable="submission_datetimeColumn" msprop:Generator_UserColumnName="submission_datetime" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:complaints" />
+      <xs:field xpath="mstns:complaint_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

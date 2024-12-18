@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="data" targetNamespace="http://tempuri.org/data.xsd" xmlns:mstns="http://tempuri.org/data.xsd" xmlns="http://tempuri.org/data.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="data" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="data" msprop:Generator_UserDSName="data">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="concerns" msprop:Generator_TableClassName="concernsDataTable" msprop:Generator_TableVarName="tableconcerns" msprop:Generator_RowChangedName="concernsRowChanged" msprop:Generator_TablePropName="concerns" msprop:Generator_RowDeletingName="concernsRowDeleting" msprop:Generator_RowChangingName="concernsRowChanging" msprop:Generator_RowEvHandlerName="concernsRowChangeEventHandler" msprop:Generator_RowDeletedName="concernsRowDeleted" msprop:Generator_RowClassName="concernsRow" msprop:Generator_UserTableName="concerns" msprop:Generator_RowEvArgName="concernsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="concernID" msprop:Generator_ColumnVarNameInTable="columnconcernID" msprop:Generator_ColumnPropNameInRow="concernID" msprop:Generator_ColumnPropNameInTable="concernIDColumn" msprop:Generator_UserColumnName="concernID" type="xs:long" />
+              <xs:element name="studName" msprop:Generator_ColumnVarNameInTable="columnstudName" msprop:Generator_ColumnPropNameInRow="studName" msprop:Generator_ColumnPropNameInTable="studNameColumn" msprop:Generator_UserColumnName="studName" type="xs:string" minOccurs="0" />
+              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category" type="xs:string" minOccurs="0" />
+              <xs:element name="concernDescription" msprop:Generator_ColumnVarNameInTable="columnconcernDescription" msprop:Generator_ColumnPropNameInRow="concernDescription" msprop:Generator_ColumnPropNameInTable="concernDescriptionColumn" msprop:Generator_UserColumnName="concernDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="concernStatus" msprop:Generator_ColumnVarNameInTable="columnconcernStatus" msprop:Generator_ColumnPropNameInRow="concernStatus" msprop:Generator_ColumnPropNameInTable="concernStatusColumn" msprop:Generator_UserColumnName="concernStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="subDate" msprop:Generator_ColumnVarNameInTable="columnsubDate" msprop:Generator_ColumnPropNameInRow="subDate" msprop:Generator_ColumnPropNameInTable="subDateColumn" msprop:Generator_UserColumnName="subDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:concerns" />
+      <xs:field xpath="mstns:concernID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
